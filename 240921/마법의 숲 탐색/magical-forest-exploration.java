@@ -66,7 +66,7 @@ public class Main {
             if (tr >= 0 && map[tr][tc] != 0) return false;
             tr++;
             if (tr > R) return false;
-            if (map[tr][tc] != 0) return false;
+            if (tr >= 0 && map[tr][tc] != 0) return false;
         }
         return true;
     }
@@ -79,7 +79,7 @@ public class Main {
             if (tr >= 0 && map[tr][tc] != 0) return false;
             tr++;
             if (tr > R) return false;
-            if (map[tr][tc] != 0) return false;
+            if (tr >= 0 && map[tr][tc] != 0) return false;
         }
         return true;
     }
