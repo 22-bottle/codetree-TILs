@@ -25,13 +25,11 @@ public class Main {
                 else if (canGoLeft()) {
                     c--;
                     d = d == 0 ? 3 : d - 1;
-                }
-                else if (canGoRight()) {
+                } else if (canGoRight()) {
                     c++;
                     d = (d + 1) % 4;
-                }
-                else {
-                    if (r <= 0) init();
+                } else {
+                    if (r <= 1) init();
                     else {
                         fill(i);
                         answer += move();
