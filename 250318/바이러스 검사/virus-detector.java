@@ -9,12 +9,12 @@ public class Main {
     
     public static void main(String[] args) throws Exception {
         init();
-        int answer = 0;
+        int answer = N;
         for (int i = 0; i < N; i++) {
-            answer++;
             rests[i] -= jang;
             if (rests[i] <= 0) continue;
-            answer += rests[i] / won + 1;
+            answer += rests[i] / won;
+            if (rests[i] % won != 0) answer++;
         }
         System.out.println(answer);
     }
