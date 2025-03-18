@@ -9,7 +9,7 @@ public class Main {
     
     public static void main(String[] args) throws Exception {
         init();
-        int answer = N;
+        long answer = N;
         for (int i = 0; i < N; i++) {
             rests[i] -= jang;
             if (rests[i] <= 0) continue;
